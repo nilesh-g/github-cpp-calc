@@ -7,7 +7,7 @@ int main()
     cout << "Calculator App" << endl;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
-    cout << "1. Add\n2. Multiply\n3. Division\n4. Modulus\nEnter choice: ";
+    cout << "1. Add\n2. Multiply\n3. Division\n4. Modulus\n5. Subtract\nEnter choice: ";
     cin >> choice;
     switch (choice)
     {
@@ -27,6 +27,10 @@ int main()
         res = num1 % num2;
         cout << "Modulus result: " << res << endl;
         break;
+    case 5:
+        res = num1 - num2;
+        cout << "Subtract result: " << res << endl;
+        break;        
     default:
         cout << "Invalid Choice" << endl;
     }
