@@ -7,13 +7,17 @@ int main()
     cout << "Calculator App" << endl;
     cout << "Enter two numbers: ";
     cin >> num1 >> num2;
-    cout << "1. Add\n3. Division\nEnter choice: ";
+    cout << "1. Add\n2. Multiply\n3. Division\nEnter choice: ";
     cin >> choice;
     switch (choice)
     {
     case 1:
         res = num1 + num2;
         cout << "Add result: " << res << endl;
+        break;
+    case 2:
+        res = num1 * num2;
+        cout << "Multiply result: " << res << endl;
         break;
     case 3:
         res = num1 / num2;
